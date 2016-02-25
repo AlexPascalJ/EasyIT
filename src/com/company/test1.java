@@ -1,25 +1,23 @@
 package com.company;
-import java.io.IOException;
-import java.util.Random;
-import java.io.FileWriter;
-public class Main {
 
-    /**
-     * @param args
-     * @throws IOException
-     */
+import java.io.FileWriter;
+import java.io.IOException;
+
+
+public class test1 {
+
+
 
     public static void main(String[] args) {
         final int maxpassword = 999999;
-        Random randomGenerator = new Random();
-        int password = randomGenerator.nextInt(maxpassword);
+        int password ;
         int step = 0;
 
         int border = maxpassword / 2;
         int ipassword = maxpassword;
         //
 
-        try (FileWriter writer = new FileWriter("/home/ander/Documents/test.csv")) {
+        try (FileWriter writer = new FileWriter("/home/ander/Documents/test1.csv")) {
             //
             for (int i = 1; i < maxpassword; i++) {
                 password = i;
